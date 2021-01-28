@@ -86,49 +86,50 @@ function build_from_pypi {
 # Build rocksdb at first
 # build_rocksdb_deb 5.8.8
 
-build_from_pypi ioflo 2.0.2
-build_from_pypi orderedset 2.0.3
-build_from_pypi base58 2.1.0
-build_from_pypi prompt-toolkit 3.0.14
-build_from_pypi rlp 0.6.0
-build_from_pypi sha3 0.2.1
-build_from_pypi libnacl 1.7.2
-build_from_pypi six 1.15.0
-build_from_pypi portalocker 2.1.0
-build_from_pypi sortedcontainers 2.3.0
-build_from_pypi setuptools 50.3.2
-build_from_pypi python-dateutil 2.8.1
-build_from_pypi semver 2.13.0
-##### not referenced
-##### build_from_pypi pygments 2.7.4
-build_from_pypi psutil 5.8.0
-build_from_pypi pyzmq 20.0.0 bundled
-# build_from_pypi pyzmq 18.1.1 bundled
-##### not referenced
-##### build_from_pypi intervaltree 3.1.0
-build_from_pypi jsonpickle 1.5.0
-# TODO: add libsnappy dependency for python-rocksdb package
-# build_from_pypi python-rocksdb 0.7.0
-build_from_pypi pympler 0.9
-build_from_pypi packaging 20.8
-build_from_pypi python-ursa 0.1.1
-build_from_pypi pyparsing 2.4.7
-build_from_pypi eth-utils 1.10.0
-build_from_pypi pytest 6.2.2
-build_from_pypi wcwidth 0.2.5
+# build_from_pypi ioflo 2.0.2
+# build_from_pypi orderedset 2.0.3
+# build_from_pypi base58 2.1.0
+# build_from_pypi prompt-toolkit 3.0.14
+# build_from_pypi rlp 0.6.0
+# build_from_pypi sha3 0.2.1
+# build_from_pypi libnacl 1.7.2
+# build_from_pypi six 1.15.0
+# build_from_pypi portalocker 2.1.0
+# build_from_pypi sortedcontainers 2.3.0
+# build_from_pypi sortedcontainers 1.5.7
+# build_from_pypi setuptools 50.3.2
+# build_from_pypi python-dateutil 2.8.1
+# build_from_pypi semver 2.13.0
+# ##### not referenced
+# ##### build_from_pypi pygments 2.7.4
+# build_from_pypi psutil 5.8.0
+# # build_from_pypi pyzmq 20.0.0 bundled
+build_from_pypi pyzmq 18.1.0 bundled
+# ##### not referenced
+# ##### build_from_pypi intervaltree 3.1.0
+# build_from_pypi jsonpickle 1.5.0
+# # TODO: add libsnappy dependency for python-rocksdb package
+# # build_from_pypi python-rocksdb 0.7.0
+# build_from_pypi pympler 0.9
+# build_from_pypi packaging 20.8
+# build_from_pypi python-ursa 0.1.1
+# build_from_pypi pyparsing 2.4.7
+# build_from_pypi eth-utils 1.10.0
+# build_from_pypi pytest 6.2.2
+# build_from_pypi wcwidth 0.2.5
 
-build_from_pypi eth-hash 0.3.1
-build_from_pypi eth-typing 2.2.2
-build_from_pypi leveldb 0.201
-build_from_pypi ujson 4.0.2
+# build_from_pypi eth-hash 0.3.1
+# build_from_pypi eth-typing 2.2.2
+# build_from_pypi leveldb 0.201
+# build_from_pypi ujson 4.0.2
 
-### pytest dependencies
-build_from_pypi attrs 20.3.0
-build_from_pypi iniconfig 1.1.1
-build_from_pypi pluggy 0.13.1
-build_from_pypi py 1.10.0
-build_from_pypi toml 0.10.2
-build_from_pypi msgpack 1.0.2
+# ### pytest dependencies
+# build_from_pypi attrs 20.3.0
+# build_from_pypi iniconfig 1.1.1
+# build_from_pypi pluggy 0.13.1
+# build_from_pypi py 1.10.0
+# build_from_pypi toml 0.10.2
+# build_from_pypi msgpack 0.6.2
 
-build_from_pypi toolz 0.11.1
+# build_from_pypi toolz 0.11.1
 

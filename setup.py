@@ -34,7 +34,7 @@ tests_require = ['attrs==19.1.0', 'pytest==3.3.1', 'pytest-xdist==1.22.1', 'pyte
 class PyZMQCommand(distutils.cmd.Command):
     description = 'pyzmq install target'
 
-    version = 'pyzmq==20.0.0'
+    version = 'pyzmq==18.1.0'
     options = '--install-option=--zmq=bundled'
 
     def initialize_options(self):
@@ -104,7 +104,8 @@ setup(
                         'semver==2.13.0',
                         'base58==2.1.0',
                         'orderedset==2.0.3',
-                        'sortedcontainers==2.3.0',
+                        # 'sortedcontainers==2.3.0',
+                        'sortedcontainers==1.5.7',
                         'psutil==5.8.0',
                         # 'pip<10.0.0',
                         'portalocker==2.1.0',

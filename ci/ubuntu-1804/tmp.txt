@@ -1,0 +1,25 @@
+### Some helpful commands
+
+# Copy deb file form docker volume
+docker cp "$(docker inspect --format="{{.Id}}" elegant_easley):/plenum-deb" deb-files
+
+
+# Directories with tets
+[common, crypto, ledger, state, storage, stp_core, stp_zmq]
+
+
+#### Run the tests
+
+
+pip install .[tests]
+
+python3 -m pytest -l -vv --junitxml=test-result-plenum-common.xml common
+python3 -m pytest -l -vv --junitxml=test-result-plenum-ledger.xml ledger
+python3 -m pytest -l -vv --junitxml=test-result-plenum-state.xml state
+python3 -m pytest -l -vv --junitxml=test-result-plenum-storage.xml storage
+python3 -m pytest -l -vv --junitxml=test-result-plenum-stp_core.xml stp_core
+python3 -m pytest -l -vv --junitxml=test-result-plenum-stp_zmq.xml stp_zmq
+
+### The next to tests still fail
+python3 -m pytest -l -vv --junitxml=test-result-plenum-crypto.xml crypto
+python3 -m pytest -l -vv --junitxml=test-result-plenum-stp_zmq.xml plenum

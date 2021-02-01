@@ -28,13 +28,13 @@ with open(metadata['__file__'], 'r') as f:
     exec(f.read(), metadata)
 
 tests_require = ['attrs==19.1.0', 'pytest==3.3.1', 'pytest-xdist==1.22.1', 'pytest-forked==0.2',
-                 'python3-indy==1.13.0-dev-1420', 'pytest-asyncio==0.8.0']
+                 'python3-indy==1.13.0-dev-1420', 'pytest-asyncio==0.8.0', 'msgpack==0.6.2']
 
 
 class PyZMQCommand(distutils.cmd.Command):
     description = 'pyzmq install target'
 
-    version = 'pyzmq==18.1.0'
+    version = 'pyzmq==22.0.0'
     options = '--install-option=--zmq=bundled'
 
     def initialize_options(self):
@@ -93,34 +93,32 @@ setup(
         '': ['*.txt', '*.md', '*.rst', '*.json', '*.conf', '*.html',
              '*.css', '*.ico', '*.png', 'LICENSE', 'LEGAL', 'plenum']},
     include_package_data=True,
-
     install_requires=[
-                        'jsonpickle==0.9.6',
-                        'ujson==1.33',
-                        'prompt_toolkit==0.57',
-                        'pygments==2.2.0',
-                        'rlp==0.5.1',
+                        'jsonpickle==1.5.0',
+                        'ujson==4.0.2',
+                        'prompt_toolkit==3.0.14',
+                        'rlp==0.6.0',
                         'sha3==0.2.1',
                         'leveldb',
+                        # 'ioflo==2.0.2',
                         'ioflo==1.5.4',
-                        'semver==2.7.9',
-                        'base58==1.0.0',
+                        'semver==2.13.0',
+                        'base58==2.1.0',
                         'orderedset==2.0.3',
+                        # 'sortedcontainers==2.3.0',
                         'sortedcontainers==1.5.7',
-                        'psutil==5.6.6',
+                        'psutil==5.8.0',
                         'pip<10.0.0',
-                        'portalocker==0.5.7',
-                        'libnacl==1.6.1',
-                        'six==1.11.0',
-                        'intervaltree==2.1.0',
-                        'msgpack-python==0.4.6',
-                        'python-rocksdb==0.6.9',
-                        'python-dateutil==2.6.1',
-                        'pympler==0.8',
-                        'packaging==19.0',
+                        'portalocker==2.1.0',
+                        'libnacl==1.7.2',
+                        'six==1.15.0',
+                        'python-rocksdb==0.7.0',
+                        'python-dateutil==2.8.1',
+                        'pympler==0.9',
+                        'packaging==20.8',
+                        # 'indy-crypto==0.4.5',
                         'python-ursa==0.1.1',
                       ],
-
     setup_requires=['pytest-runner'],
     extras_require={
         'tests': tests_require,

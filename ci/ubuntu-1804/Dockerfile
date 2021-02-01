@@ -25,7 +25,6 @@ RUN apt-get update -y && apt-get install -y \
         build-essential \
         librocksdb5.8 \
         librocksdb-dev \
-        virtualenv \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install -U \ 

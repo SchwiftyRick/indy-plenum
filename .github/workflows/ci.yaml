@@ -55,7 +55,7 @@ jobs:
           check_name: Indy Plenum ${{ matrix.module }} Test Report
           github_token: ${{ secrets.RUBHUB_TOKEN }}
           report_paths: test-result-plenum-${{ matrix.module }}.xml
-RUSTPYTHONASYNCIODEBUG=0 python3 runner.py --pytest "python3 -m pytest -l -vv --junitxml=test-result-plenum-common-1.xml" --dir common --output "test-result-plenum-common.txt" --test-only-slice
+
   lint:
     name: Lint
     runs-on: ubuntu-18.04
